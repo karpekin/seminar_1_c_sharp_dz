@@ -4,27 +4,48 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.Write("Введите первое число: ");
-int number=Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число: ");
-int number2=Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите первое число: ");
+// int number=Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int number2=Convert.ToInt32(Console.ReadLine());
 
-if (number2>number)
-{
-    Console.Write("Максимальное число: ");
-    Console.WriteLine(number2);
-}
-else
-{
-    Console.Write("Максимальное число: ");
-    Console.WriteLine(number);
-}
+// if (number2>number)
+// {
+//     Console.Write("Максимальное число: ");
+//     Console.WriteLine(number2);
+// }
+// else
+// {
+//     Console.Write("Максимальное число: ");
+//     Console.WriteLine(number);
+// }
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
+
+Console.Write("Введите первое число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите третье число: ");
+int number3 = Convert.ToInt32(Console.ReadLine());
+
+int maxim = number;
+
+if (number2 > maxim)
+{
+    maxim = number2;
+}
+if (number3 > maxim)
+{
+    maxim = number3;
+}
+
+Console.Write("Максимальное число: ");
+Console.WriteLine(maxim);
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
